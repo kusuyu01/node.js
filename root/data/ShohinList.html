@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/ShohinList.js" defer></script>
+    <title>商品検索</title>
+  </head>
+  <body>
+    <h1>商品検索画面</h1>
+    <div>
+      <button id="logout">ログアウト</button>
+    </div>
+    <div>
+      <button id="back">戻る</button>
+    </div>
+    <hr />
+    <form action="/search" method="post" id="form">
+      <div>
+        <label for="keyWord">キーワード </label><br />
+        <input type="text" id="keyWord" />
+      </div>
+ 
+    <div>
+      <p id="errorMessage"></p>
+      <input type="radio" id="code" name="selectType" value="code" checked />
+      <label for="code">商品コード</label>
+      <input type="radio" id="name" name="selectType" value="name" />
+      <label for="name">商品名</label>
+    </div>
+    <div>
+      <button id="search">検索</button>
+    </div>
+  </form>
+
+    <!-- </form> -->
+    <button id="toShohinNew">新規登録</button>
+
+    <!-- テーブル配置用スペース -->
+    <table id="table" border="1" style="border-collapse: collapse">
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </body>
+</html>

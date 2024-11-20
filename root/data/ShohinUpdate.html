@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/ShohinUpdate.js" defer></script>
+    <title>商品更新</title>
+  </head>
+  <body>
+    <h1>商品更新画面</h1>
+    <div>
+      <button id="logout">ログアウト</button>
+    </div>
+    <div>
+      <button id="back">戻る</button>
+    </div>
+    <hr />
+
+    <table border="1" style="border-collapse: collapse">
+      <tr>
+        <td><label for="productCode">商品コード:</label></td>
+        <td><input id="productCode" type="text" value="0001" /></td>
+      </tr>
+      <tr>
+        <td><label for="productName">商品名:</label></td>
+        <td><input id="productName" type="text" value="チョコレート" /></td>
+      </tr>
+      <tr>
+        <td><label for="price">単価:</label></td>
+        <td><input id="price" type="text" value="100" /></td>
+      </tr>
+      <tr>
+        <td><label for="quantity">数量:</label></td>
+        <td><input id="quantity" type="text" value="100" /></td>
+      </tr>
+      <tr>
+        <td><label for="manufacturer">製造元:</label></td>
+        <td>
+          <select name="" id="manufacturer">
+            <option value="">----選択してください----</option>
+            <option value="" selected>○○会社</option>
+            <option value="">××会社</option>
+            <option value="">☆☆会社</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <button id="update">更新</button>
+  </body>
+</html>
